@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Morgan Molenda, Completed on March 14 2022, assignment 3 -->
+
+<!--
+I am aware there are no user profile pictures, I am waiting to learn more css in class to support this feature as well as many many others
+-->
+
+<head>
+<title>Forums</title>
+
+<meta charset="utf-8">
+<meta name="description" content="Assignment 3 Mockup">
+<meta name="keywords" content="Music,Forums,Community,Images">
+<meta name="author" content="Morgan Molenda"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.headerimg{
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: 555;
+}
+
+.headerh1{
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+.topnav input[type=text]{
+  float:  right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the footer */
+footer {
+  border:1px solid black;
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="headerimg">
+  <img src="img/logo.png" alt="logo"/>
+</div>
+<header>
+  <h2>Forums</h2>
+</header>
+<div class="topnav">
+<section>
+  <nav>
+    <ul>
+      <li><a class="active" href="home">Home</a></li>
+      <li><a href="#">Music</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#">About</a></li>
+      <input type="text" placeholder="search">
+    </ul>
+  </nav>
+  </div>
+  <article>
+    <h1>Mission Statement</h1>
+    <p>
+        Our mission is to provide the users of this website with a pleasent expirence with sharing their expirences or questions with a wholesome community
+    </p>
+    <hr>
+  </article>
+</section>
+
+
+<section>
+    <article>
+        <h2>Username</h2>
+        <hr>
+        <h4>Role:</h4>
+        <h4>Topic:</h4>
+        <p>time and date</p>
+        <p>
+            Content: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ea impedit labore suscipit nisi, placeat tempora quod repellat quis dolorum vitae corrupti doloremque ipsum excepturi soluta reprehenderit dolores sit? Ducimus?
+        </p>
+        <hr>
+    </article>
+</section>
+
+<section>
+    <article>
+        <h2>Username</h2>
+        <hr>
+        <h4>Role:</h4>
+        <h4>Topic:</h4>
+        <p>time and date</p>
+        <p>
+            Content: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem ea impedit labore suscipit nisi, placeat tempora quod repellat quis dolorum vitae corrupti doloremque ipsum excepturi soluta reprehenderit dolores sit? Ducimus?
+        </p>
+        <hr>
+    </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
