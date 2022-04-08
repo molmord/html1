@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+<style>
+  
+@media only screen and (max-width: 600px){
+  body{
+    background-color: blue;
+  }
+}
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #d442af;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #03c2fc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 2px solid black;
+}
+
+</style>
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+</div>
+</head>
+<body>
+
+</body>
+</html>

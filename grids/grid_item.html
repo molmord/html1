@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style>
+
+@media only screen and (max-width: 600px){
+  body{
+    background-color: blue;
+  }
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #23a0ad;
+  padding: 15px;
+  margin: 25px;
+}
+
+.grid-item {
+  background-color: #f9e6ff;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 10px;
+
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>
+  <div class="grid-item item5">5</div>
+</div>
+
+</body>
+</html>
