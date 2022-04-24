@@ -1,0 +1,179 @@
+<html !DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Photography">
+  <meta name="keywords" content="Photos, Hobbies, Art">
+  <meta name="author" content="Morgan Molenda">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Morgan Molenda, Assignment 4 WEBDEV -->
+	<title>Home - Morgan Molenda</title>
+
+	<style>
+
+	html * {
+	font-size: 20px;
+	line-height: 1.625;
+	font-family: "Lucida Console", "Courier New", monospace;
+	}
+
+	h1{
+		margin: 20px;	
+		padding: 20px;
+		position: relative;
+		background-color: #848484;
+		border: 2px solid black;
+		text-align: center;
+		color: #ffffff;
+
+		}
+
+	body{
+			border: 1px solid black;
+			background-color:#3d3d3d;
+			margin: 0; 
+		}
+
+
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #3d3d3d;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #848484;
+  color: white;
+  border: 1◄px solid black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.footer {
+	padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#3d3d3d ;
+  color: white;
+  text-align: center;
+}
+
+.parent {
+margin: 15px;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #bbbbbb;
+border: 2px solid black;
+}
+
+.div1 { 
+	margin: 15px;
+	grid-area: 2 / 1 / 4 / 4; 
+	
+	}
+.div2 { 
+	margin: 15px;
+	grid-area: 2 / 4 / 4 / 6;
+	
+	 }
+.div3 { 
+	margin: 15px;
+	grid-area: 4 / 1 / 6 / 3; 
+	
+}
+.div4 {
+	margin: 15px;
+ grid-area: 4 / 3 / 5 / 4; 
+ 
+}
+.div5 {
+	margin: 15px;
+ grid-area: 5 / 3 / 6 / 4;
+   }
+.div6 { 
+	margin: 15px;
+	grid-area: 4 / 4 / 6 / 6; 
+	
+}
+
+
+		
+	</style>
+
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+<h1>Home</h1>
+
+<div class="parent">
+	<div class="div1"> 
+		<h2>Welcome!</h2>
+			<p>
+				This page includes most of my photography work from highschool and as of recent.
+				This IS a hobby for me and I'm still improving. If you would like to send me a message please see
+				the contact page for well, contact information. 
+			</p>
+	</div>
+	<div class="div2"> 
+		<h3>Description of Content</h3>
+		<p>Lots of these photographs were taken with inspiration from various different artists
+		from differing places around the world and very different time periods. Most of them
+		can be found on the Minneapolis Institute of Arts galla.</p>
+	</div>
+	<div class="div3">
+		<h3>Mission Statement</h3>
+		<p>
+			My mission is to just simply share what I do in my hobbies through simple photos most of which are unedited.
+		</p>
+	</div>
+	<div class="div4">
+		<img src="images/test image.png" alt="Image" width="100%" height="100%">
+	</div>
+	<div class="div5">
+		<img src="images/test image.png" alt="Image" width="100%" height="100%">
+	</div>
+	<div class="div6">
+		<h3>Inspiration (Out of Order)</h3>
+			<ol class="clearfix">
+				<li>David Seymour</li>
+				<li>Alec William Soth</li>
+				<li>Hamaya Hiroshi</li>
+				<li>Walker Evans</li>
+				<li>Gillese Peress</li>
+			</ol>
+	</div>
+</div>
+</div>
+<div class="footer">
+	<footer>footer</footer>
+</div>
+</body>
+</html>

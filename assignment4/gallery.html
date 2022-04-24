@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Photography">
+  <meta name="keywords" content="Photos, Hobbies, Art">
+  <meta name="author" content="Morgan Molenda">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Morgan Molenda, Assignment 4 WEBDEV -->
+	<title>Gallery&Inspiration - Morgan Molenda</title>
+
+<style>
+html * {
+font-size: 20px;
+line-height: 1.625;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body{
+border: 1px solid black;
+background-color:#3d3d3d;
+margin: 0; 
+}
+
+h1{
+text-align: center;
+font-size: 24px;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 15%;
+background-color: #3d3d3d;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #848484;
+  color: white;
+  border: 1◄px solid black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #bbbbbb;
+margin: 15px;
+}
+
+.div1 { 
+	margin: 15px;
+	grid-area: 1 / 1 / 2 / 5;
+	 }
+.div2 {
+	margin: 15px;
+	grid-area: 2 / 1 / 4 / 3; 
+}
+.div3 { 
+	margin: 15px;
+	grid-area: 2 / 3 / 4 / 5; 
+}
+.div4 { 
+	margin: 15px;
+	grid-area: 4 / 1 / 6 / 3; 
+}
+.div5 { 
+	margin: 15px;
+	grid-area: 4 / 3 / 6 / 5; 
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a class="active" href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+	<div class="parent">
+		<div class="div1">
+			<h1>Gallery</h1>
+		</div>
+		<div class="div2"> 
+			<img src="images/test image.png" alt="Image" width="100%" height="100%">
+		</div>
+		<div class="div3">
+			<img src="images/test image.png" alt="Image" width="100%" height="100%">
+		</div>
+		<div class="div4"> 
+			<img src="images/test image.png" alt="Image" width="100%" height="100%">
+		</div>
+		<div class="div5">
+			<img src="images/test image.png" alt="Image" width="100%" height="100%">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

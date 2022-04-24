@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Photography">
+  <meta name="keywords" content="Photos, Hobbies, Art">
+  <meta name="author" content="Morgan Molenda">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Having trouble trying mobile optmize the about page, the images like to overlap into the text and vice versa on some screen sizes -->
+<!-- Morgan Molenda, Assignment 4 WEBDEV -->
+
+	<title>About Me - Morgan Molenda</title>
+<style>
+
+html * {
+	font-size: 20px;
+	line-height: 1.625;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+border: 1px solid black;
+background-color:#3d3d3d ;
+margin: 0; 
+}
+
+h1{
+margin: 20px;	
+padding: 20px;
+position: relative;
+background-color: #848484;
+border: 2px solid black;
+text-align: center;
+color: #ffffff;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+p{
+font-size: 20px;
+}
+
+ul {
+font-family: "Lucida Console", "Courier New", monospace;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 15%;
+background-color: #3d3d3d;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #848484;
+  color: white;
+  border: 1◄px solid black;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.footer {
+	padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#3d3d3d ;
+  color: white;
+  text-align: center;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+background-color: #bbbbbb;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 3; 
+		margin: 15px;
+}
+.div2 { grid-area: 3 / 1 / 6 / 6; 
+		margin: 15px;}
+.div3 { grid-area: 1 / 3 / 3 / 6; 
+		margin: 15px;}
+
+</style>
+
+</head>
+
+<body>
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="gallery.html">Gallery</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+		  <li><a class="active" href="#about">About</a></li>
+		</ul>
+
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+			<div class="footer">
+				<footer>FOOTER</footer>
+			</div>
+	 <div class="parent">
+		<div class="div1">
+			<img src="images/test image.png" alt="image" width="100%" height="100%">
+		</div>
+		<div class="div2">
+			<img src="images/test image.png">
+		</div>
+		<div class="div3">
+			<h2>About Me</h2>
+			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+			irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div> 
+			<div class="footer">
+				<footer>footer</footer>
+			</div>
+</body>
+</html>
