@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<!-- Morgan Molenda -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Lab 4">
+ 	<meta name="author" content="Morgan Molenda">
+	<meta name="description" content="Lab 4 Assignment">
+	<title>Lab 4</title>
+
+	<style>
+/* CSS Comment */
+body{
+	background-color: darkseagreen;
+}
+
+#colorBody > body {
+	width: 100%;
+	height: 100%;
+}
+.grid-container {
+  display: grid;
+  justify-content: center;
+  height: 400px;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+
+	@media screen and ( max-width: 1024px){
+		.grid-container{
+			display:grid;
+			grid-template-columns: auto auto;
+		}
+	}
+	 @media screen and ( max-width:768px ) {
+            body { background: blue; }
+
+            .grid-container{
+            	display: grid;
+            	grid-template-columns:auto;}
+        }
+
+	</style>
+
+</head>
+<body>
+<div id="colorBody">
+<div class="grid-container">
+	<div><img src="images/Buff-Garfield.jpg" width="100%" height="100%" alt="garfy"></div>
+	<div><img src="images/Buff-Garfield.jpg" width="100%" height="100%" alt="garfy"></div>
+	<div><img src="images/Buff-Garfield.jpg" width="100%" height="100%" alt="garfy"></div>
+		<p><button type="button" onclick="myFunction()">Set Container Background Color</button></p>
+
+	<script>
+		/* JS Comment */
+		function myFunction() {
+			document.getElementById("colorBody").style.backgroundColor = "lightblue";
+		}
+	</script>
+</div>
+</div>
+
+
+
+</body>
+</html>
