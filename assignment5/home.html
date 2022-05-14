@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+
+	<title>About Me</title>
+<style>
+
+.container {
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.item {
+  flex: 1 1 auto;
+  margin: 25px;
+ 
+}
+
+img{
+width: 18.95rem;
+height: 18.75rem;
+justify-content: center;
+align-items: center;
+border: 2px solid black;
+margin: 1.5rem;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   border: 2px solid black;
+   background-color: #bbbbbb;
+   color: black;
+   text-align: center;
+   margin-top: ;
+}
+
+.imgwrap{
+	width: 50%;
+	margin: auto;
+}
+
+
+.tContainer{
+text-align: center;
+background-color: #bbbbbb;
+border: 2px solid black;
+padding: 15px;
+padding-bottom: 25px;
+
+}
+
+@media screen and (max-width: 1024px){
+	
+	.container{
+		justify-content: center;
+		align-items: center;
+		margin: 4rem;
+	}
+	
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!-- START NAV -->
+<nav>
+    <div class="container0">
+        <div id="i" class="inav">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+
+    <ul id="nav" class="nav">
+      <a href="inspirations.html">Inspiration</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+</nav> 
+
+<!-- END NAV -->
+
+<!-- start content -->
+
+<div class="container">
+	<div class="item">
+		<img src="img\street4.jpg">
+		<img src="img\street5.jpg">
+		<img src="img\street1.jpg">
+		<img src="img\street3.jpg">
+	</div>
+	<div class="item tContainer" id="tContaierId">
+		<h1>Introduction</h1>
+		<p> Hi there!<br> My names Morgan and it appears you have stumbled upon this website ive created. Here you will find a small gallery of photos i've taken or just simply enjoy.<br>
+		I suppose my main goal was to spread my love for images around the web but it turned more into an admiration project than anything else</p>
+		<br>
+		<h2>About Me</h2>
+
+		<p>
+			<br>
+			I started off growing up in a small river town about 30 minutes away from minneapolis. Growing up my household was split into two when my mother and father split but that never hindered their desire to give me the best life I could have. Even though my household was different compared to my peers in school, I never felt outcast because of it. Hit the fast forward button into middle school, life changed in some ways. People started behaving differently,relationships were formed and broken with old and new friends.<br> 
+			<br>
+			Because of this rapid change in environment at school and dealing with the usual home issues I had become infatuated with computers and music. Something about the two just piqued my interest in learning new things. At age 12, I started playing bass guitar and built my first computer, At age 14 I had started to learn how to play electric guitar and how to use digital software to record my playing. <br>
+			<br>
+			After Middle School my interests in the musical arts had grown and same with my interest in computers but, photography took over my interests for a good amount of time during my senior year. Between taking a class on it after forgetting I even registered for a Photography class, I had discovered another new hobby that I enjoy, mainly to keep myself busy during my free time outside of work and school. <br>
+			<br>
+
+		</p>
+
+		<h2>Inspirations and Why</h2>
+		<br>
+
+		<p>
+			<em>"Every picture conveys a story,emotion or message"</em>
+			<br>
+			<br>
+			Mainly I take inspiration from street art,street scenes and some nature. Why you may ask? <br>
+			Mostly because I enjoy those types of environments, depending on the photographer a place and time can be altered into a new perspective based off angles, lighting, aperature and positioning.<br>
+			The main interest I have is the theory of "right place, right time" sometimes just by being in the correct place at a correct time you can capture something you never thought you would see or witness in your wildest dreams<br>
+			<br>
+		</p>
+
+	</div>
+</div>
+
+<div class="footer" id="myFooter">
+	<p> FOOTER </p>
+	<button type="button" onclick="myFunction()">Background Color</button>
+</div>
+
+<!-- end content -->
+<script>
+
+ /* START NAVJS */
+var nav = document.getElementById('nav'),
+                        i = document.getElementById('i'),
+                        c1 = document.getElementsByTagName('div')[2],
+                        c2 = document.getElementsByTagName('div')[3],
+                        c3 = document.getElementsByTagName('div')[4];
+                    i.addEventListener('click', function() {
+                        if (nav.className.match(/\bopen\b/)) {
+                            nav.classList.remove('open');
+                            c1.classList.remove('close-c1');
+                            c2.classList.remove('close-c2');
+                            c3.classList.remove('close-c3');
+                        } else {
+                            nav.classList.add('open');
+                            c1.classList.add('close-c1');
+                            c2.classList.add('close-c2');
+                            c3.classList.add('close-c3');
+                        }
+                    });
+                    nav.addEventListener('click', function() {
+                        nav.classList.remove('open');
+                        c1.classList.remove('close-c1');
+                        c2.classList.remove('close-c2');
+                        c3.classList.remove('close-c3');
+                    });
+   /* END NAVJS */
+
+   function myFunction(){
+   	document.body.style.backgroundColor = "white";
+   	document.getElementById("tContainerID").style.backgroundColor = "white";
+   }
+   
+   /* I am aware of that certain part at the bottom of the home page that does change color
+   I tried a whole bunch of different things but i suspect its part of the navbar style sheet thats causing
+   the color to not change. */
+
+</script>
+</body>
+</html>

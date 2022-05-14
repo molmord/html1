@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="navbar.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+  <title>Title</title>
+
+  <style>
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.text {
+  order: -1;
+  flex-basis: 24rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  padding-right: 5rem;
+}
+
+.images {
+  position: relative;
+  flex-basis: 58rem;
+}
+
+.images img {
+  position: relative;
+  width: 18.95rem;
+  height: 18.75rem;
+  border: 1px solid #111;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+.images img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.images img.zoom {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  border: 1px solid transparent;
+  z-index: 99;
+}
+
+@media screen and (max-width:  1024px){
+  .wrapper{
+  justify-content: center;
+  align-itmes: center;
+  margin-left: 4rem;
+  }
+  .text{
+    margin-left: 4rem;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!-- START NAVBAR -->
+<nav>
+    <div class="container0">
+        <div id="i" class="inav">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+    </div>
+
+    <ul id="nav" class="nav">
+      <a href="inspirations.html">Inspiration</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="home.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+</nav>  
+<!-- END NAVBAR -->
+
+<!-- START CONTENT -->
+  <div class="text">
+    <p>My Work</p>
+</div>
+<div class="wrapper">
+  <div class="images">
+    <img src="img\m1.jpg">
+    <img src="img\m2.jpg">
+    <img src="img\m3.jpg">
+    <img src="img\m4.jpg">
+    <img src="img\m5.jpg">
+    <img src="img\m6.jpg">
+    <img src="img\street6.jpg">
+    <img src="img\street7.jpg">
+    <img src="img\street8.jpg">
+    <img src="img\street9.jpg">
+    <img src="img\street10.jpg">
+    <img src="img\street11.jpg">
+  </div>
+
+
+</div>
+
+
+  <!--END CONTENT -->
+<script>
+  /* START NAVJS */
+var nav = document.getElementById('nav'),
+                        i = document.getElementById('i'),
+                        c1 = document.getElementsByTagName('div')[2],
+                        c2 = document.getElementsByTagName('div')[3],
+                        c3 = document.getElementsByTagName('div')[4];
+                    i.addEventListener('click', function() {
+                        if (nav.className.match(/\bopen\b/)) {
+                            nav.classList.remove('open');
+                            c1.classList.remove('close-c1');
+                            c2.classList.remove('close-c2');
+                            c3.classList.remove('close-c3');
+                        } else {
+                            nav.classList.add('open');
+                            c1.classList.add('close-c1');
+                            c2.classList.add('close-c2');
+                            c3.classList.add('close-c3');
+                        }
+                    });
+                    nav.addEventListener('click', function() {
+                        nav.classList.remove('open');
+                        c1.classList.remove('close-c1');
+                        c2.classList.remove('close-c2');
+                        c3.classList.remove('close-c3');
+                    });
+   /* END NAVJS */
+
+   /*JS GALLERY START*/
+
+  $(".images img").click(function () {
+  $(this).addClass("zoom");
+  });
+
+  $(".images img").mouseleave(function () {
+  $(this).removeClass("zoom");
+  });
+
+  const switcher = document.getElementById("switcher");
+  const root = document.documentElement;
+
+  switcher.addEventListener("change", function (evt) {
+
+  root.style.setProperty("--var-repeat", evt.target.value);
+  });
+
+</script>
+
+</body>
+</html>
